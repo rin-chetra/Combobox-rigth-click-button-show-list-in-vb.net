@@ -1,0 +1,196 @@
+Private Sub INPUT_STAFF_ATTENDANCE_Form_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        ComboBox12.Items.Add("P")
+        ComboBox12.Items.Add("L")
+        ComboBox12.Items.Add("A")
+        ComboBox12.Items.Add("O")
+
+        TextBox1.Visible = False
+        TextBox2.Visible = False
+        TextBox3.Visible = False
+        TextBox4.Visible = False
+        TextBox5.Visible = False
+        TextBox6.Visible = False
+        TextBox7.Visible = False
+        TextBox8.Visible = False
+        TextBox9.Visible = False
+        TextBox10.Visible = False
+        TextBox11.Visible = False
+
+        ComboBox1.Items.Add("P-Present")
+        ComboBox1.Items.Add("L-Late")
+        ComboBox1.Items.Add("A-Absent")
+        ComboBox1.Items.Add("O-Other")
+
+        ComboBox2.Items.Add("P-Present")
+        ComboBox2.Items.Add("L-Late")
+        ComboBox2.Items.Add("A-Absent")
+        ComboBox2.Items.Add("O-Other")
+
+        ComboBox3.Items.Add("P-Present")
+        ComboBox3.Items.Add("L-Late")
+        ComboBox3.Items.Add("A-Absent")
+        ComboBox3.Items.Add("O-Other")
+
+        ComboBox4.Items.Add("P-Present")
+        ComboBox4.Items.Add("L-Late")
+        ComboBox4.Items.Add("A-Absent")
+        ComboBox4.Items.Add("O-Other")
+
+        ComboBox5.Items.Add("P-Present")
+        ComboBox5.Items.Add("L-Late")
+        ComboBox5.Items.Add("A-Absent")
+        ComboBox5.Items.Add("O-Other")
+
+        ComboBox6.Items.Add("P-Present")
+        ComboBox6.Items.Add("L-Late")
+        ComboBox6.Items.Add("A-Absent")
+        ComboBox6.Items.Add("O-Other")
+
+        ComboBox6.Items.Add("P-Present")
+        ComboBox6.Items.Add("L-Late")
+        ComboBox6.Items.Add("A-Absent")
+        ComboBox6.Items.Add("O-Other")
+
+        ComboBox7.Items.Add("P-Present")
+        ComboBox7.Items.Add("L-Late")
+        ComboBox7.Items.Add("A-Absent")
+        ComboBox7.Items.Add("O-Other")
+
+        ComboBox8.Items.Add("P-Present")
+        ComboBox8.Items.Add("L-Late")
+        ComboBox8.Items.Add("A-Absent")
+        ComboBox8.Items.Add("O-Other")
+
+        ComboBox9.Items.Add("P-Present")
+        ComboBox9.Items.Add("L-Late")
+        ComboBox9.Items.Add("A-Absent")
+        ComboBox9.Items.Add("O-Other")
+
+        ComboBox10.Items.Add("P-Present")
+        ComboBox10.Items.Add("L-Late")
+        ComboBox10.Items.Add("A-Absent")
+        ComboBox10.Items.Add("O-Other")
+
+        ComboBox11.Items.Add("P-Present")
+        ComboBox11.Items.Add("L-Late")
+        ComboBox11.Items.Add("A-Absent")
+        ComboBox11.Items.Add("O-Other")
+ Private Sub btn_full_Click(sender As Object, e As EventArgs) Handles btn_full.Click
+        If ComboBox12.Text = "P" Then
+            ComboBox1.Text = ("P-Present")
+            ComboBox2.Text = ("P-Present")
+            ComboBox3.Text = ("P-Present")
+            ComboBox4.Text = ("P-Present")
+            ComboBox5.Text = ("P-Present")
+            ComboBox6.Text = ("P-Present")
+            ComboBox7.Text = ("P-Present")
+            ComboBox8.Text = ("P-Present")
+            ComboBox9.Text = ("P-Present")
+            ComboBox10.Text = ("P-Present")
+            ComboBox11.Text = ("P-Present")
+
+        ElseIf ComboBox12.Text = "L" Then
+            ComboBox1.Text = ("L-Late")
+            ComboBox2.Text = ("L-Late")
+            ComboBox3.Text = ("L-Latet")
+            ComboBox4.Text = ("L-Late")
+            ComboBox5.Text = ("L-Late")
+            ComboBox6.Text = ("L-Late")
+            ComboBox7.Text = ("L-Late")
+            ComboBox8.Text = ("L-Late")
+            ComboBox9.Text = ("L-Late")
+            ComboBox10.Text = ("L-Late")
+            ComboBox11.Text = ("L-Late")
+        End If
+        If ComboBox12.Text = "A" Then
+            ComboBox1.Text = ("A-Absent")
+            ComboBox2.Text = ("A-Absent")
+            ComboBox3.Text = ("A-Absent")
+            ComboBox4.Text = ("A-Absent")
+            ComboBox5.Text = ("A-Absent")
+            ComboBox6.Text = ("A-Absent")
+            ComboBox7.Text = ("A-Absent")
+            ComboBox8.Text = ("A-Absent")
+            ComboBox9.Text = ("A-Absent")
+            ComboBox10.Text = ("A-Absent")
+            ComboBox11.Text = ("A-Absent")
+
+        ElseIf ComboBox12.Text = "O" Then
+            ComboBox1.Text = ("O-Other")
+            ComboBox2.Text = ("O-Other")
+            ComboBox3.Text = ("O-Other")
+            ComboBox4.Text = ("O-Other")
+            ComboBox5.Text = ("O-Other")
+            ComboBox6.Text = ("O-Other")
+            ComboBox7.Text = ("O-Other")
+            ComboBox8.Text = ("O-Other")
+            ComboBox9.Text = ("O-Other")
+            ComboBox10.Text = ("O-Other")
+            ComboBox11.Text = ("O-Other")
+
+        End If
+
+    End Sub
+
+    Private Sub bnt_clear_Click(sender As Object, e As EventArgs) Handles bnt_clear.Click
+        ComboBox12.Text = ""
+
+        TextBox1.Text = ""
+        ComboBox1.Text = ""
+        TextBox1.Visible = False
+        ComboBox1.Visible = True
+
+        TextBox2.Text = ""
+        ComboBox2.Text = ""
+        TextBox2.Visible = False
+        ComboBox2.Visible = True
+
+        TextBox3.Text = ""
+        ComboBox3.Text = ""
+        TextBox3.Visible = False
+        ComboBox3.Visible = True
+
+        TextBox4.Text = ""
+        ComboBox4.Text = ""
+        TextBox4.Visible = False
+        ComboBox4.Visible = True
+
+        TextBox5.Text = ""
+        ComboBox5.Text = ""
+        TextBox5.Visible = False
+        ComboBox5.Visible = True
+
+        TextBox6.Text = ""
+        ComboBox6.Text = ""
+        TextBox6.Visible = False
+        ComboBox6.Visible = True
+
+        TextBox7.Text = ""
+        ComboBox7.Text = ""
+        TextBox7.Visible = False
+        ComboBox7.Visible = True
+
+        TextBox8.Text = ""
+        ComboBox8.Text = ""
+        TextBox8.Visible = False
+        ComboBox8.Visible = True
+
+        TextBox9.Text = ""
+        ComboBox9.Text = ""
+        TextBox9.Visible = False
+        ComboBox9.Visible = True
+
+        TextBox10.Text = ""
+        ComboBox10.Text = ""
+        TextBox10.Visible = False
+        ComboBox10.Visible = True
+
+        TextBox11.Text = ""
+        ComboBox11.Text = ""
+        TextBox11.Visible = False
+        ComboBox11.Visible = True
+
+        TextBox1.Text = ""
+        ComboBox1.Text = ""
+        TextBox1.Visible = False
+        ComboBox1.Visible = True
